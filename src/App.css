@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+* {
+  background-color: lightskyblue; /* Removed extra semicolon */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.van{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.vanFront{
+  height: 25px;
+  width: 30px;
+  border: 2px solid rgb(245, 218, 243); 
+  border-radius: 4px;
+  position: relative;
+  top:1.6rem;
+  left:5.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vanStorage {
+  height: 50px; 
+  width: 90px; 
+  border: 2px solid rgb(245, 218, 243); 
+  position: relative;
+  left:5.2rem;
 }
+
+.vanBottom{
+  height: 2.5px;
+  width: 140px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: black;
+  position:relative;
+  top: 3.5rem;
+  right:3rem;
+}
+
+.wheel1, .wheel2, .wheel3{
+  height: 18px;
+  width: 18px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+  .wheel1{
+    position: relative;
+    right:7rem;
+    top: 3rem;
+  }
+
+  .wheel2{
+    position: relative;
+    top:3rem;
+    right:5.7rem;
+  }
+
+  .wheel3{
+    position: relative;
+    top:3rem;
+    right:12.6rem;
+  }
+
+.miniwheel1, .miniwheel2, .miniwheel3{
+  height: 7px;
+  width: 7px;
+  border-radius: 5px;
+  border: 2px solid white;
+  position: relative;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  z-index: 1;
+}
+
